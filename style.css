@@ -17,4 +17,10 @@ pre {
 .srt {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
+    color: white;
+}
+
+.extlink {
+    font-size: larger;
+    color: yellow;
 }
