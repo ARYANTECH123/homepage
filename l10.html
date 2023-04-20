@@ -1,0 +1,21 @@
+Mov bx, 4
+Mov dx, 2
+Mov ax, 01h
+
+Call m1
+Mov bx, 4
+Sub bx, dx
+Call m1
+
+Ret
+
+M1 proc
+Push bx
+Dec bx
+Cmp bx, 0
+Jz skip
+Call m1
+Skip: pop bx
+Mul bx
+Ret
+M1 endp
